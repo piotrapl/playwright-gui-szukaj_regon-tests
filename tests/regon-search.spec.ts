@@ -1,5 +1,10 @@
 import { test, expect } from './fixtures/regon.fixture';
 
+// Dane testowe i test case'y dla funkcjonalności wyszukiwania podmiotów wg REGON
+// (przypadki negatywne ooraz pozytywne)
+// Dane są zgromadzone w tablicach obiektów, a testy iterują przez te tablice
+// To model data-driven testing.
+
 test.describe('Wyszukiwanie podmiotów wg REGON – ', () => {
 
   test.beforeEach(async ({ regonPage }) => {
