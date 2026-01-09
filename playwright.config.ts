@@ -23,7 +23,8 @@ export default defineConfig({
   workers: process.env.CI ? 1 : undefined,
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
   reporter: [['html', { outputFolder: 'playwright-report', open: 'always' }]],
-  /* Ustawienia współdzielone dla wszystkich projektów wymienionych niżej. Zobacz: https://playwright.dev/docs/api/class-testoptions. */
+  /* Ustawienia współdzielone między wszystkimi projektami. 
+     Zobacz: https://playwright.dev/docs/api/class-testoptions. */
   use: {
     /* Base URL to use in actions like `await page.goto('')`. */
     // baseURL: 'http://localhost:3000',
